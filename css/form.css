@@ -1,0 +1,17 @@
+/**
+ * Styles for the add-observation.html page 
+ */
+
+ .required{
+     color: red;
+ }
+
+ legend{
+     font-weight: bolder;
+     font-size: medium;
+ }
+
+ label{
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight:500;
+ }
