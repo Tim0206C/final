@@ -55,7 +55,7 @@
       <section>
         <h2>Observation Details</h2>
         <p><span class="required">*</span> Required field</p>
-        <form id="form">
+        <form id="form" method="POST">
           <!-- TODO: create the form based on the specification in the Final Assessment -->
           <fieldset>
             <legend>Observation</legend>
@@ -80,7 +80,7 @@
   <label for="Longitude">Longitude
     <span class="required">*</span><span id="longitudeE" class="required"></span></label>
     <input type="text" name="Longitude" id="Longitude" placeholder="-79.3496" required />
-    <label><input type="checkbox" id="share_location">Share Location information(i.e.,it's ok to make this public)
+    <label><input type="checkbox"  name="share_location" id="share_location">Share Location information(i.e.,it's ok to make this public)
     </label>
 </fieldset>
 
@@ -95,7 +95,7 @@
 <label>Photo</label>
 <input type="file" id="file" name="file"  multiple>
 <label>License (<a href="https://creativecommons.org/choose/">help on choosing a license</a>)</label>
-<select class="license">
+<select class="license" name="license">
   <option value="CC-BY" selected="selected">Creative Commons Attribution License</option>
   <option value="CC-BY-NC">Creative Commons Attribution-NonCommercial License</option>
   <option value="CC-BY-SA" >Creative Commons Attribution-ShareAlike License</option>
@@ -105,7 +105,7 @@
 </select>
 </fieldset>
 
-    <input type="submit" value="Submit">
+    <input type="submit" formaction="https://formspree.io/f/xvodojvd" value="Submit">
         </form>
       </section>
     </main>
